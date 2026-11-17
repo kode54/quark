@@ -69,8 +69,8 @@ index ae9a7d6..757f5e3 100644
   *           CreateProcessInternalW   (kernelbase.@)
   */
 @@ -521,6 +554,7 @@ BOOL WINAPI DECLSPEC_HOTPATCH CreateProcessInternalW( HANDLE token, const WCHAR
+     HANDLE debug = 0;
      ULONG nt_flags = 0;
-     USHORT machine = 0;
      NTSTATUS status;
 +    char *product_name;
  
